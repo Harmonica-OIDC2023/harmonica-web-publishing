@@ -10,17 +10,11 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <script src="static/js/import_html.js"></script>
   </head>
   <body>
     <div class="main h-100">
-      <div class="menu h-100">
-        <img src="static/img/fi-rr-envelope.png" />
-        <img src="static/img/fi-rr-home.png" />
-        <img src="static/img/fi-rr-network-cloud.png" />
-        <img src="static/img/fi-rr-network.png" />
-        <img src="static/img/fi-rr-screen.png" />
-        <img src="static/img/fi-rr-user.png" />
-      </div>
+      <div data-include-path="component/navbar.html"></div>
       <div class="screen">
         <div class="top">
           <div class="item-block"></div>
@@ -46,7 +40,6 @@
     body {
       height: 100%;
     }
-
     .main {
       display: flex;
     }
@@ -81,16 +74,6 @@
       width: 100%;
       display: flex;
       padding: 10px 0px;
-    }
-    .menu {
-      width: 80px;
-      height: 100%;
-      background: #f74f50;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-    }
-    .menu img {
-      width: 100%;
-      padding: 20px;
     }
   </style>
 </html>
