@@ -21,6 +21,18 @@
         <img src="static/img/fi-rr-screen.png" />
         <img src="static/img/fi-rr-user.png" />
       </div>
+      <div class="screen">
+        <div class="top">
+          <div class="item-block"></div>
+          <div class="item-block"></div>
+          <div class="item-block"></div>
+          <div class="item-block"></div>
+        </div>
+        <div class="down">
+          <div class="item-block" style="width: 30%"></div>
+          <div class="item-block"></div>
+        </div>
+      </div>
     </div>
 
     <script
@@ -34,8 +46,41 @@
     body {
       height: 100%;
     }
+
     .main {
       display: flex;
+    }
+    .screen {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 8px;
+      gap: 8px;
+    }
+    .screen .top {
+      width: 100%;
+      height: 20%;
+      display: flex;
+      align-self: stretch;
+      flex-grow: 1;
+      padding: 10px 0px;
+    }
+    .item-block {
+      background: #ffffff;
+      border: 1px solid #fafafa;
+      box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 12px;
+      width: 100%;
+      height: 100%;
+      margin: 0px 10px;
+    }
+    .screen .down {
+      height: 80%;
+      width: 100%;
+      display: flex;
+      padding: 10px 0px;
     }
     .menu {
       width: 80px;
